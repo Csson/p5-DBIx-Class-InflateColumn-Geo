@@ -6,7 +6,7 @@ package DBIx::Class::InflateColumn::Geo;
 
 # ABSTRACT: Inflate geometric columns to data structures
 # AUTHORITY
-our $VERSION = '0.0100';
+our $VERSION = '0.0101';
 
 use Carp qw/confess/;
 
