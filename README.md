@@ -43,6 +43,12 @@ Later:
     say $park->secondary\_location->{'latitude'}; # 45.9843
     say $park->secondary\_location->{'astext'};   # POINT(12.32 45.9843)
 
+    # Values can also be given as an array ref or as a space-separated string, both in x/longitude, y/latitude order:
+    my $same_park = $schema->resultset('Park')->create({
+        location => [15.43, 54.32],
+        secondary_location => '12.32 45.9843',
+    });
+
 # DESCRIPTION
 
 DBIx::Class::InflateColumn::Geo inflates geometry columns (so far, only `POINT` is supported) to more accessible data structures.
