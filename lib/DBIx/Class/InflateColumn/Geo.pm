@@ -95,6 +95,7 @@ __END__
     });
 
 Later:
+
     my $park = $schema->resultset('Park')->create({
         location => { x => 15.43, y => 54.32 },
         secondary_location => { longitude => 12.32, latitude => 45.9843 },
